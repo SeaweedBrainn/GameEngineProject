@@ -1,0 +1,1 @@
+. "/Users/hemang/VSCodeStuff/GameEngineProject/conan/deb/deactivate_conanrunenv-debug-armv8.sh"

@@ -1,0 +1,274 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "GameEngine"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"set_property",
+			"include",
+			"find_package"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"conan/deb/glfw3-Target-debug.cmake",
+			"conan/deb/glfw3Targets.cmake",
+			"conan/deb/glfw3-config.cmake",
+			"conan/deb/module-GLEW-Target-debug.cmake",
+			"conan/deb/module-GLEWTargets.cmake",
+			"conan/deb/FindGLEW.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"file" : 3,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 16,
+				"parent" : 4
+			},
+			{
+				"file" : 2,
+				"parent" : 5
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 24,
+				"parent" : 6
+			},
+			{
+				"file" : 1,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 38,
+				"parent" : 8
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"file" : 6,
+				"parent" : 10
+			},
+			{
+				"command" : 3,
+				"file" : 6,
+				"line" : 16,
+				"parent" : 11
+			},
+			{
+				"file" : 5,
+				"parent" : 12
+			},
+			{
+				"command" : 3,
+				"file" : 5,
+				"line" : 24,
+				"parent" : 13
+			},
+			{
+				"file" : 4,
+				"parent" : 14
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 73,
+				"parent" : 15
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -std=gnu++17 -arch arm64"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "GL_SILENCE_DEPRECATION=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/hemang/.conan2/p/glmc7261f667dea4/p/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					17
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "GameEngine::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-search_paths_first -Wl,-headerpad_max_install_names",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/Users/hemang/.conan2/p/b/glewd73c4073010bb/p/lib",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/lib -Wl,-rpath,/Users/hemang/.conan2/p/b/glewd73c4073010bb/p/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "/Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/lib/libglfw3.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-framework AppKit",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-framework Cocoa",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-framework CoreFoundation",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-framework CoreGraphics",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-framework CoreServices",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-framework Foundation",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-framework IOKit",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "/Users/hemang/.conan2/p/b/glewd73c4073010bb/p/lib/libGLEWd.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-framework OpenGL",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "GameEngine",
+	"nameOnDisk" : "GameEngine",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

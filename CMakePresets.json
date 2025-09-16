@@ -9,7 +9,8 @@
             "binaryDir": "${workspaceFolder}/build",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Debug",
-                "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "YES",
+                "CMAKE_TOOLCHAIN_FILE": "${workspaceFolder}/conan/deb/conan_toolchain.cmake"
             }
         }
     ]
