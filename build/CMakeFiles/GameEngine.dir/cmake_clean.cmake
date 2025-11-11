@@ -1,6 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/GameEngine.dir/src/main.cpp.o"
-  "CMakeFiles/GameEngine.dir/src/main.cpp.o.d"
+  "CMakeFiles/GameEngine.dir/src/Game.cpp.o"
+  "CMakeFiles/GameEngine.dir/src/Game.cpp.o.d"
+  "CMakeFiles/GameEngine.dir/src/MainComponent.cpp.o"
+  "CMakeFiles/GameEngine.dir/src/MainComponent.cpp.o.d"
+  "CMakeFiles/GameEngine.dir/src/Time.cpp.o"
+  "CMakeFiles/GameEngine.dir/src/Time.cpp.o.d"
+  "CMakeFiles/GameEngine.dir/src/Window.cpp.o"
+  "CMakeFiles/GameEngine.dir/src/Window.cpp.o.d"
   "GameEngine"
   "GameEngine.pdb"
 )
