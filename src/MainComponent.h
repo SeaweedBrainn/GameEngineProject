@@ -1,5 +1,12 @@
 #pragma once
 
+#include "Window.h"
+#include "Time.h"
+#include "Game.h"
+#include "Input.h"
+#include <thread>
+#include <iostream>
+
 #include <string>
 #include "Game.h"
 using std::string;

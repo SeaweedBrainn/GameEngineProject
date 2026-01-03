@@ -1,9 +1,4 @@
 #include "MainComponent.h"
-#include "Window.h"
-#include "Time.h"
-#include "Game.h"
-#include <thread>
-#include <iostream>
 
 int MainComponent::WIDTH = 800;
 int MainComponent::HEIGHT = 600;
@@ -61,7 +56,8 @@ void MainComponent::Run(){
             if(Window::IsCloseRequested()) Stop();
 
             Time::setDelta(frameTime);
-
+            Input::update();
+            
             game->input();
             game->update();
 

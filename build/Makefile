@@ -153,6 +153,30 @@ src/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
+src/Input.o: src/Input.cpp.o
+.PHONY : src/Input.o
+
+# target to build an object file
+src/Input.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/src/Input.cpp.o
+.PHONY : src/Input.cpp.o
+
+src/Input.i: src/Input.cpp.i
+.PHONY : src/Input.i
+
+# target to preprocess a source file
+src/Input.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/src/Input.cpp.i
+.PHONY : src/Input.cpp.i
+
+src/Input.s: src/Input.cpp.s
+.PHONY : src/Input.s
+
+# target to generate assembly for a file
+src/Input.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/src/Input.cpp.s
+.PHONY : src/Input.cpp.s
+
 src/MainComponent.o: src/MainComponent.cpp.o
 .PHONY : src/MainComponent.o
 
@@ -201,6 +225,30 @@ src/Time.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/src/Time.cpp.s
 .PHONY : src/Time.cpp.s
 
+src/Vector2f.o: src/Vector2f.cpp.o
+.PHONY : src/Vector2f.o
+
+# target to build an object file
+src/Vector2f.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o
+.PHONY : src/Vector2f.cpp.o
+
+src/Vector2f.i: src/Vector2f.cpp.i
+.PHONY : src/Vector2f.i
+
+# target to preprocess a source file
+src/Vector2f.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/src/Vector2f.cpp.i
+.PHONY : src/Vector2f.cpp.i
+
+src/Vector2f.s: src/Vector2f.cpp.s
+.PHONY : src/Vector2f.s
+
+# target to generate assembly for a file
+src/Vector2f.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/src/Vector2f.cpp.s
+.PHONY : src/Vector2f.cpp.s
+
 src/Window.o: src/Window.cpp.o
 .PHONY : src/Window.o
 
@@ -237,12 +285,18 @@ help:
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
+	@echo "... src/Input.o"
+	@echo "... src/Input.i"
+	@echo "... src/Input.s"
 	@echo "... src/MainComponent.o"
 	@echo "... src/MainComponent.i"
 	@echo "... src/MainComponent.s"
 	@echo "... src/Time.o"
 	@echo "... src/Time.i"
 	@echo "... src/Time.s"
+	@echo "... src/Vector2f.o"
+	@echo "... src/Vector2f.i"
+	@echo "... src/Vector2f.s"
 	@echo "... src/Window.o"
 	@echo "... src/Window.i"
 	@echo "... src/Window.s"

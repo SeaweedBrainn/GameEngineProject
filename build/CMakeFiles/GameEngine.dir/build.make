@@ -86,10 +86,24 @@ CMakeFiles/GameEngine.dir/src/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/Game.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hemang/VSCodeStuff/GameEngineProject/src/Game.cpp -o CMakeFiles/GameEngine.dir/src/Game.cpp.s
 
+CMakeFiles/GameEngine.dir/src/Input.cpp.o: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/src/Input.cpp.o: /Users/hemang/VSCodeStuff/GameEngineProject/src/Input.cpp
+CMakeFiles/GameEngine.dir/src/Input.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GameEngine.dir/src/Input.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/Input.cpp.o -MF CMakeFiles/GameEngine.dir/src/Input.cpp.o.d -o CMakeFiles/GameEngine.dir/src/Input.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Input.cpp
+
+CMakeFiles/GameEngine.dir/src/Input.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/Input.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hemang/VSCodeStuff/GameEngineProject/src/Input.cpp > CMakeFiles/GameEngine.dir/src/Input.cpp.i
+
+CMakeFiles/GameEngine.dir/src/Input.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/Input.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hemang/VSCodeStuff/GameEngineProject/src/Input.cpp -o CMakeFiles/GameEngine.dir/src/Input.cpp.s
+
 CMakeFiles/GameEngine.dir/src/MainComponent.cpp.o: CMakeFiles/GameEngine.dir/flags.make
 CMakeFiles/GameEngine.dir/src/MainComponent.cpp.o: /Users/hemang/VSCodeStuff/GameEngineProject/src/MainComponent.cpp
 CMakeFiles/GameEngine.dir/src/MainComponent.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GameEngine.dir/src/MainComponent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GameEngine.dir/src/MainComponent.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/MainComponent.cpp.o -MF CMakeFiles/GameEngine.dir/src/MainComponent.cpp.o.d -o CMakeFiles/GameEngine.dir/src/MainComponent.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/MainComponent.cpp
 
 CMakeFiles/GameEngine.dir/src/MainComponent.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/GameEngine.dir/src/MainComponent.cpp.s: cmake_force
 CMakeFiles/GameEngine.dir/src/Time.cpp.o: CMakeFiles/GameEngine.dir/flags.make
 CMakeFiles/GameEngine.dir/src/Time.cpp.o: /Users/hemang/VSCodeStuff/GameEngineProject/src/Time.cpp
 CMakeFiles/GameEngine.dir/src/Time.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GameEngine.dir/src/Time.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GameEngine.dir/src/Time.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/Time.cpp.o -MF CMakeFiles/GameEngine.dir/src/Time.cpp.o.d -o CMakeFiles/GameEngine.dir/src/Time.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Time.cpp
 
 CMakeFiles/GameEngine.dir/src/Time.cpp.i: cmake_force
@@ -114,10 +128,24 @@ CMakeFiles/GameEngine.dir/src/Time.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/Time.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hemang/VSCodeStuff/GameEngineProject/src/Time.cpp -o CMakeFiles/GameEngine.dir/src/Time.cpp.s
 
+CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o: /Users/hemang/VSCodeStuff/GameEngineProject/src/Vector2f.cpp
+CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o -MF CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o.d -o CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Vector2f.cpp
+
+CMakeFiles/GameEngine.dir/src/Vector2f.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/Vector2f.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hemang/VSCodeStuff/GameEngineProject/src/Vector2f.cpp > CMakeFiles/GameEngine.dir/src/Vector2f.cpp.i
+
+CMakeFiles/GameEngine.dir/src/Vector2f.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/Vector2f.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hemang/VSCodeStuff/GameEngineProject/src/Vector2f.cpp -o CMakeFiles/GameEngine.dir/src/Vector2f.cpp.s
+
 CMakeFiles/GameEngine.dir/src/Window.cpp.o: CMakeFiles/GameEngine.dir/flags.make
 CMakeFiles/GameEngine.dir/src/Window.cpp.o: /Users/hemang/VSCodeStuff/GameEngineProject/src/Window.cpp
 CMakeFiles/GameEngine.dir/src/Window.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GameEngine.dir/src/Window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GameEngine.dir/src/Window.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/Window.cpp.o -MF CMakeFiles/GameEngine.dir/src/Window.cpp.o.d -o CMakeFiles/GameEngine.dir/src/Window.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Window.cpp
 
 CMakeFiles/GameEngine.dir/src/Window.cpp.i: cmake_force
@@ -131,22 +159,26 @@ CMakeFiles/GameEngine.dir/src/Window.cpp.s: cmake_force
 # Object files for target GameEngine
 GameEngine_OBJECTS = \
 "CMakeFiles/GameEngine.dir/src/Game.cpp.o" \
+"CMakeFiles/GameEngine.dir/src/Input.cpp.o" \
 "CMakeFiles/GameEngine.dir/src/MainComponent.cpp.o" \
 "CMakeFiles/GameEngine.dir/src/Time.cpp.o" \
+"CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o" \
 "CMakeFiles/GameEngine.dir/src/Window.cpp.o"
 
 # External object files for target GameEngine
 GameEngine_EXTERNAL_OBJECTS =
 
 GameEngine: CMakeFiles/GameEngine.dir/src/Game.cpp.o
+GameEngine: CMakeFiles/GameEngine.dir/src/Input.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/src/MainComponent.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/src/Time.cpp.o
+GameEngine: CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/src/Window.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/build.make
 GameEngine: /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/lib/libglfw3.a
 GameEngine: /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/lib/libGLEWd.a
 GameEngine: CMakeFiles/GameEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable GameEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable GameEngine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GameEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

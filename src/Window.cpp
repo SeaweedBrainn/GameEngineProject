@@ -40,3 +40,7 @@ int Window::GetWidth(){
     glfwGetWindowSize(window, &width, &height);
     return width;
 }
+
+GLFWwindow* Window::getWindow(){
+    return window;
+}

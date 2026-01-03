@@ -7,6 +7,12 @@
 },
 {
   "directory": "/Users/hemang/VSCodeStuff/GameEngineProject/build",
+  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/Input.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Input.cpp",
+  "file": "/Users/hemang/VSCodeStuff/GameEngineProject/src/Input.cpp",
+  "output": "CMakeFiles/GameEngine.dir/src/Input.cpp.o"
+},
+{
+  "directory": "/Users/hemang/VSCodeStuff/GameEngineProject/build",
   "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/MainComponent.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/MainComponent.cpp",
   "file": "/Users/hemang/VSCodeStuff/GameEngineProject/src/MainComponent.cpp",
   "output": "CMakeFiles/GameEngine.dir/src/MainComponent.cpp.o"
@@ -16,6 +22,12 @@
   "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/Time.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Time.cpp",
   "file": "/Users/hemang/VSCodeStuff/GameEngineProject/src/Time.cpp",
   "output": "CMakeFiles/GameEngine.dir/src/Time.cpp.o"
+},
+{
+  "directory": "/Users/hemang/VSCodeStuff/GameEngineProject/build",
+  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Vector2f.cpp",
+  "file": "/Users/hemang/VSCodeStuff/GameEngineProject/src/Vector2f.cpp",
+  "output": "CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o"
 },
 {
   "directory": "/Users/hemang/VSCodeStuff/GameEngineProject/build",

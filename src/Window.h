@@ -17,5 +17,6 @@ class Window{
         static int GetWidth();
         static int GetHeight();
         static string GetTitle();
+        static GLFWwindow* getWindow();
         
 };
