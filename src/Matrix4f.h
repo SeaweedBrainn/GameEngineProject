@@ -2,8 +2,8 @@
 #include <cmath>
 #include <vector>
 
-#define _1dFloatVector std::vector<float>
-#define _2dFloatVector std::vector<_1dFloatVector>
+typedef std::vector<float> _1dFloatVector;
+typedef std::vector<_1dFloatVector> _2dFloatVector;
 
 class Matrix4f {
 private:

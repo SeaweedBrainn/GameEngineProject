@@ -15,6 +15,7 @@ MainComponent::MainComponent(): isRunning(false) {
 
 void MainComponent::main(){
     Window::CreateWindow(WIDTH, HEIGHT, TITLE);
+    RenderUtil::initGraphics();
     MainComponent *gameEngine = new MainComponent();
     gameEngine->Start();
 }
@@ -56,9 +57,10 @@ void MainComponent::Run(){
             if(Window::IsCloseRequested()) Stop();
 
             Time::setDelta(frameTime);
-            Input::update();
             
             game->input();
+            Input::update();
+            
             game->update();
 
             if (frameCounter >= Time::SECOND){
@@ -77,8 +79,9 @@ void MainComponent::Run(){
 }
 
 void MainComponent::Render(){
-    Window::Render();
+    RenderUtil::clearScreen();
     game->render();
+    Window::Render();
 }
 
 void MainComponent::CleanUp(){

@@ -1,7 +1,5 @@
 #pragma once
 #define GLEW_STATIC
-#include <GL/glew.h>
-#include <GLFW/glfw3.h>
 #include "Window.h"
 #include "Vector2f.h"
 #include <algorithm>
@@ -21,11 +19,6 @@ class Input{
         static void update();
         static Vector2f getMousePosition();
     private:
-        static std::list<int> currentKeys;
-        static std::list<int> downKeys;
-        static std::list<int> upKeys;
-
-        static std::list<int> currentMouse;
-        static std::list<int> downMouse;
-        static std::list<int> upMouse;
+        static bool lastKeys[];
+        static bool lastMouse[];
 };

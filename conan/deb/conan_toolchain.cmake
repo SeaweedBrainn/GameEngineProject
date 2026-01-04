@@ -155,9 +155,9 @@ list(PREPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR})
 # The Conan local "generators" folder, where this toolchain is saved.
 list(PREPEND CMAKE_PREFIX_PATH ${CMAKE_CURRENT_LIST_DIR} )
 list(PREPEND CMAKE_PROGRAM_PATH "/Users/hemang/.conan2/p/cmake4043f173ae163/p/CMake.app/Contents/bin")
-list(PREPEND CMAKE_LIBRARY_PATH "/Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/lib" "/Users/hemang/.conan2/p/b/glewd73c4073010bb/p/lib")
-list(PREPEND CMAKE_INCLUDE_PATH "/Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include" "/Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include" "/Users/hemang/.conan2/p/glmc7261f667dea4/p/include")
-set(CONAN_RUNTIME_LIB_DIRS "/Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/lib" "/Users/hemang/.conan2/p/b/glewd73c4073010bb/p/lib" )
+list(PREPEND CMAKE_LIBRARY_PATH "/Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/lib" "/Users/hemang/.conan2/p/b/glewd73c4073010bb/p/lib" "/Users/hemang/.conan2/p/b/gladea9d9f520b119/p/lib")
+list(PREPEND CMAKE_INCLUDE_PATH "/Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include" "/Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include" "/Users/hemang/.conan2/p/glmc7261f667dea4/p/include" "/Users/hemang/.conan2/p/b/gladea9d9f520b119/p/include")
+set(CONAN_RUNTIME_LIB_DIRS "/Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/lib" "/Users/hemang/.conan2/p/b/glewd73c4073010bb/p/lib" "/Users/hemang/.conan2/p/b/gladea9d9f520b119/p/lib" )
 
 endif()
 

@@ -1,6 +1,11 @@
 #include "Game.h"
 
-Game::Game() {}
+Game::Game(): mesh(Mesh()){
+    vertexList data {Vertex(Vector3f(-1,-1,0)),
+                    Vertex(Vector3f(-1,1,0)),
+                    Vertex(Vector3f(0,1,0))};
+    mesh.addVertices(data);
+}
 
 void Game::input() {
     if(Input::getMouseDown(0)) std::cout << Input::getMousePosition() << std::endl;
@@ -12,5 +17,5 @@ void Game::update() {
 }
 
 void Game::render() {
-
+    mesh.draw();
 }

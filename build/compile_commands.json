@@ -1,37 +1,79 @@
 [
 {
   "directory": "/Users/hemang/VSCodeStuff/GameEngineProject/build",
-  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/Game.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Game.cpp",
+  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -isystem /Users/hemang/.conan2/p/b/gladea9d9f520b119/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/Game.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Game.cpp",
   "file": "/Users/hemang/VSCodeStuff/GameEngineProject/src/Game.cpp",
   "output": "CMakeFiles/GameEngine.dir/src/Game.cpp.o"
 },
 {
   "directory": "/Users/hemang/VSCodeStuff/GameEngineProject/build",
-  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/Input.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Input.cpp",
+  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -isystem /Users/hemang/.conan2/p/b/gladea9d9f520b119/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/Input.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Input.cpp",
   "file": "/Users/hemang/VSCodeStuff/GameEngineProject/src/Input.cpp",
   "output": "CMakeFiles/GameEngine.dir/src/Input.cpp.o"
 },
 {
   "directory": "/Users/hemang/VSCodeStuff/GameEngineProject/build",
-  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/MainComponent.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/MainComponent.cpp",
+  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -isystem /Users/hemang/.conan2/p/b/gladea9d9f520b119/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/MainComponent.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/MainComponent.cpp",
   "file": "/Users/hemang/VSCodeStuff/GameEngineProject/src/MainComponent.cpp",
   "output": "CMakeFiles/GameEngine.dir/src/MainComponent.cpp.o"
 },
 {
   "directory": "/Users/hemang/VSCodeStuff/GameEngineProject/build",
-  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/Time.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Time.cpp",
+  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -isystem /Users/hemang/.conan2/p/b/gladea9d9f520b119/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/Matrix4f.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Matrix4f.cpp",
+  "file": "/Users/hemang/VSCodeStuff/GameEngineProject/src/Matrix4f.cpp",
+  "output": "CMakeFiles/GameEngine.dir/src/Matrix4f.cpp.o"
+},
+{
+  "directory": "/Users/hemang/VSCodeStuff/GameEngineProject/build",
+  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -isystem /Users/hemang/.conan2/p/b/gladea9d9f520b119/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/Mesh.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Mesh.cpp",
+  "file": "/Users/hemang/VSCodeStuff/GameEngineProject/src/Mesh.cpp",
+  "output": "CMakeFiles/GameEngine.dir/src/Mesh.cpp.o"
+},
+{
+  "directory": "/Users/hemang/VSCodeStuff/GameEngineProject/build",
+  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -isystem /Users/hemang/.conan2/p/b/gladea9d9f520b119/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/Quaternion.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Quaternion.cpp",
+  "file": "/Users/hemang/VSCodeStuff/GameEngineProject/src/Quaternion.cpp",
+  "output": "CMakeFiles/GameEngine.dir/src/Quaternion.cpp.o"
+},
+{
+  "directory": "/Users/hemang/VSCodeStuff/GameEngineProject/build",
+  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -isystem /Users/hemang/.conan2/p/b/gladea9d9f520b119/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/RenderUtil.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/RenderUtil.cpp",
+  "file": "/Users/hemang/VSCodeStuff/GameEngineProject/src/RenderUtil.cpp",
+  "output": "CMakeFiles/GameEngine.dir/src/RenderUtil.cpp.o"
+},
+{
+  "directory": "/Users/hemang/VSCodeStuff/GameEngineProject/build",
+  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -isystem /Users/hemang/.conan2/p/b/gladea9d9f520b119/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/Time.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Time.cpp",
   "file": "/Users/hemang/VSCodeStuff/GameEngineProject/src/Time.cpp",
   "output": "CMakeFiles/GameEngine.dir/src/Time.cpp.o"
 },
 {
   "directory": "/Users/hemang/VSCodeStuff/GameEngineProject/build",
-  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Vector2f.cpp",
+  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -isystem /Users/hemang/.conan2/p/b/gladea9d9f520b119/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/Util.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Util.cpp",
+  "file": "/Users/hemang/VSCodeStuff/GameEngineProject/src/Util.cpp",
+  "output": "CMakeFiles/GameEngine.dir/src/Util.cpp.o"
+},
+{
+  "directory": "/Users/hemang/VSCodeStuff/GameEngineProject/build",
+  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -isystem /Users/hemang/.conan2/p/b/gladea9d9f520b119/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Vector2f.cpp",
   "file": "/Users/hemang/VSCodeStuff/GameEngineProject/src/Vector2f.cpp",
   "output": "CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o"
 },
 {
   "directory": "/Users/hemang/VSCodeStuff/GameEngineProject/build",
-  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/Window.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Window.cpp",
+  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -isystem /Users/hemang/.conan2/p/b/gladea9d9f520b119/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/Vector3f.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Vector3f.cpp",
+  "file": "/Users/hemang/VSCodeStuff/GameEngineProject/src/Vector3f.cpp",
+  "output": "CMakeFiles/GameEngine.dir/src/Vector3f.cpp.o"
+},
+{
+  "directory": "/Users/hemang/VSCodeStuff/GameEngineProject/build",
+  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -isystem /Users/hemang/.conan2/p/b/gladea9d9f520b119/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/Vertex.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Vertex.cpp",
+  "file": "/Users/hemang/VSCodeStuff/GameEngineProject/src/Vertex.cpp",
+  "output": "CMakeFiles/GameEngine.dir/src/Vertex.cpp.o"
+},
+{
+  "directory": "/Users/hemang/VSCodeStuff/GameEngineProject/build",
+  "command": "/usr/bin/c++ -DGL_SILENCE_DEPRECATION=1 -isystem /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/include -isystem /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/include -isystem /Users/hemang/.conan2/p/glmc7261f667dea4/p/include -isystem /Users/hemang/.conan2/p/b/gladea9d9f520b119/p/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/GameEngine.dir/src/Window.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Window.cpp",
   "file": "/Users/hemang/VSCodeStuff/GameEngineProject/src/Window.cpp",
   "output": "CMakeFiles/GameEngine.dir/src/Window.cpp.o"
 }

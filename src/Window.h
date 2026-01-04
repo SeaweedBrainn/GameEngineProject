@@ -1,8 +1,8 @@
 #pragma once
 
-#define GLEW_STATIC
-#include <GL/glew.h>
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include <iostream>
 #include <string>
 
 using std::string;

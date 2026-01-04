@@ -327,6 +327,29 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"path" : "conan/deb/glad-config-version.cmake"
+		},
+		{
+			"path" : "conan/deb/glad-config.cmake"
+		},
+		{
+			"path" : "conan/deb/cmakedeps_macros.cmake"
+		},
+		{
+			"path" : "conan/deb/gladTargets.cmake"
+		},
+		{
+			"path" : "conan/deb/glad-debug-armv8-data.cmake"
+		},
+		{
+			"path" : "conan/deb/glad-Target-debug.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",

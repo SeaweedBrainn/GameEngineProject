@@ -77,4 +77,5 @@ Quaternion Quaternion::operator*(const Vector3f &other) const
 
 std::ostream& operator<<(std::ostream& os, const Quaternion& quaternion){
     std::cout << "(" << quaternion.getX() << "," << quaternion.getY() << "," << quaternion.getZ() << "," << quaternion.getW() << ")";
+    return os;
 }

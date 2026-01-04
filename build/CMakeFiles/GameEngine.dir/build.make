@@ -114,10 +114,66 @@ CMakeFiles/GameEngine.dir/src/MainComponent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/MainComponent.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hemang/VSCodeStuff/GameEngineProject/src/MainComponent.cpp -o CMakeFiles/GameEngine.dir/src/MainComponent.cpp.s
 
+CMakeFiles/GameEngine.dir/src/Matrix4f.cpp.o: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/src/Matrix4f.cpp.o: /Users/hemang/VSCodeStuff/GameEngineProject/src/Matrix4f.cpp
+CMakeFiles/GameEngine.dir/src/Matrix4f.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GameEngine.dir/src/Matrix4f.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/Matrix4f.cpp.o -MF CMakeFiles/GameEngine.dir/src/Matrix4f.cpp.o.d -o CMakeFiles/GameEngine.dir/src/Matrix4f.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Matrix4f.cpp
+
+CMakeFiles/GameEngine.dir/src/Matrix4f.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/Matrix4f.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hemang/VSCodeStuff/GameEngineProject/src/Matrix4f.cpp > CMakeFiles/GameEngine.dir/src/Matrix4f.cpp.i
+
+CMakeFiles/GameEngine.dir/src/Matrix4f.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/Matrix4f.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hemang/VSCodeStuff/GameEngineProject/src/Matrix4f.cpp -o CMakeFiles/GameEngine.dir/src/Matrix4f.cpp.s
+
+CMakeFiles/GameEngine.dir/src/Mesh.cpp.o: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/src/Mesh.cpp.o: /Users/hemang/VSCodeStuff/GameEngineProject/src/Mesh.cpp
+CMakeFiles/GameEngine.dir/src/Mesh.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GameEngine.dir/src/Mesh.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/Mesh.cpp.o -MF CMakeFiles/GameEngine.dir/src/Mesh.cpp.o.d -o CMakeFiles/GameEngine.dir/src/Mesh.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Mesh.cpp
+
+CMakeFiles/GameEngine.dir/src/Mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/Mesh.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hemang/VSCodeStuff/GameEngineProject/src/Mesh.cpp > CMakeFiles/GameEngine.dir/src/Mesh.cpp.i
+
+CMakeFiles/GameEngine.dir/src/Mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/Mesh.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hemang/VSCodeStuff/GameEngineProject/src/Mesh.cpp -o CMakeFiles/GameEngine.dir/src/Mesh.cpp.s
+
+CMakeFiles/GameEngine.dir/src/Quaternion.cpp.o: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/src/Quaternion.cpp.o: /Users/hemang/VSCodeStuff/GameEngineProject/src/Quaternion.cpp
+CMakeFiles/GameEngine.dir/src/Quaternion.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GameEngine.dir/src/Quaternion.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/Quaternion.cpp.o -MF CMakeFiles/GameEngine.dir/src/Quaternion.cpp.o.d -o CMakeFiles/GameEngine.dir/src/Quaternion.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Quaternion.cpp
+
+CMakeFiles/GameEngine.dir/src/Quaternion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/Quaternion.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hemang/VSCodeStuff/GameEngineProject/src/Quaternion.cpp > CMakeFiles/GameEngine.dir/src/Quaternion.cpp.i
+
+CMakeFiles/GameEngine.dir/src/Quaternion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/Quaternion.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hemang/VSCodeStuff/GameEngineProject/src/Quaternion.cpp -o CMakeFiles/GameEngine.dir/src/Quaternion.cpp.s
+
+CMakeFiles/GameEngine.dir/src/RenderUtil.cpp.o: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/src/RenderUtil.cpp.o: /Users/hemang/VSCodeStuff/GameEngineProject/src/RenderUtil.cpp
+CMakeFiles/GameEngine.dir/src/RenderUtil.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GameEngine.dir/src/RenderUtil.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/RenderUtil.cpp.o -MF CMakeFiles/GameEngine.dir/src/RenderUtil.cpp.o.d -o CMakeFiles/GameEngine.dir/src/RenderUtil.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/RenderUtil.cpp
+
+CMakeFiles/GameEngine.dir/src/RenderUtil.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/RenderUtil.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hemang/VSCodeStuff/GameEngineProject/src/RenderUtil.cpp > CMakeFiles/GameEngine.dir/src/RenderUtil.cpp.i
+
+CMakeFiles/GameEngine.dir/src/RenderUtil.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/RenderUtil.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hemang/VSCodeStuff/GameEngineProject/src/RenderUtil.cpp -o CMakeFiles/GameEngine.dir/src/RenderUtil.cpp.s
+
 CMakeFiles/GameEngine.dir/src/Time.cpp.o: CMakeFiles/GameEngine.dir/flags.make
 CMakeFiles/GameEngine.dir/src/Time.cpp.o: /Users/hemang/VSCodeStuff/GameEngineProject/src/Time.cpp
 CMakeFiles/GameEngine.dir/src/Time.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GameEngine.dir/src/Time.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GameEngine.dir/src/Time.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/Time.cpp.o -MF CMakeFiles/GameEngine.dir/src/Time.cpp.o.d -o CMakeFiles/GameEngine.dir/src/Time.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Time.cpp
 
 CMakeFiles/GameEngine.dir/src/Time.cpp.i: cmake_force
@@ -128,10 +184,24 @@ CMakeFiles/GameEngine.dir/src/Time.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/Time.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hemang/VSCodeStuff/GameEngineProject/src/Time.cpp -o CMakeFiles/GameEngine.dir/src/Time.cpp.s
 
+CMakeFiles/GameEngine.dir/src/Util.cpp.o: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/src/Util.cpp.o: /Users/hemang/VSCodeStuff/GameEngineProject/src/Util.cpp
+CMakeFiles/GameEngine.dir/src/Util.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GameEngine.dir/src/Util.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/Util.cpp.o -MF CMakeFiles/GameEngine.dir/src/Util.cpp.o.d -o CMakeFiles/GameEngine.dir/src/Util.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Util.cpp
+
+CMakeFiles/GameEngine.dir/src/Util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/Util.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hemang/VSCodeStuff/GameEngineProject/src/Util.cpp > CMakeFiles/GameEngine.dir/src/Util.cpp.i
+
+CMakeFiles/GameEngine.dir/src/Util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/Util.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hemang/VSCodeStuff/GameEngineProject/src/Util.cpp -o CMakeFiles/GameEngine.dir/src/Util.cpp.s
+
 CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o: CMakeFiles/GameEngine.dir/flags.make
 CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o: /Users/hemang/VSCodeStuff/GameEngineProject/src/Vector2f.cpp
 CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o -MF CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o.d -o CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Vector2f.cpp
 
 CMakeFiles/GameEngine.dir/src/Vector2f.cpp.i: cmake_force
@@ -142,10 +212,38 @@ CMakeFiles/GameEngine.dir/src/Vector2f.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/Vector2f.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hemang/VSCodeStuff/GameEngineProject/src/Vector2f.cpp -o CMakeFiles/GameEngine.dir/src/Vector2f.cpp.s
 
+CMakeFiles/GameEngine.dir/src/Vector3f.cpp.o: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/src/Vector3f.cpp.o: /Users/hemang/VSCodeStuff/GameEngineProject/src/Vector3f.cpp
+CMakeFiles/GameEngine.dir/src/Vector3f.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/GameEngine.dir/src/Vector3f.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/Vector3f.cpp.o -MF CMakeFiles/GameEngine.dir/src/Vector3f.cpp.o.d -o CMakeFiles/GameEngine.dir/src/Vector3f.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Vector3f.cpp
+
+CMakeFiles/GameEngine.dir/src/Vector3f.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/Vector3f.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hemang/VSCodeStuff/GameEngineProject/src/Vector3f.cpp > CMakeFiles/GameEngine.dir/src/Vector3f.cpp.i
+
+CMakeFiles/GameEngine.dir/src/Vector3f.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/Vector3f.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hemang/VSCodeStuff/GameEngineProject/src/Vector3f.cpp -o CMakeFiles/GameEngine.dir/src/Vector3f.cpp.s
+
+CMakeFiles/GameEngine.dir/src/Vertex.cpp.o: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/src/Vertex.cpp.o: /Users/hemang/VSCodeStuff/GameEngineProject/src/Vertex.cpp
+CMakeFiles/GameEngine.dir/src/Vertex.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GameEngine.dir/src/Vertex.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/Vertex.cpp.o -MF CMakeFiles/GameEngine.dir/src/Vertex.cpp.o.d -o CMakeFiles/GameEngine.dir/src/Vertex.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Vertex.cpp
+
+CMakeFiles/GameEngine.dir/src/Vertex.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/Vertex.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hemang/VSCodeStuff/GameEngineProject/src/Vertex.cpp > CMakeFiles/GameEngine.dir/src/Vertex.cpp.i
+
+CMakeFiles/GameEngine.dir/src/Vertex.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/Vertex.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hemang/VSCodeStuff/GameEngineProject/src/Vertex.cpp -o CMakeFiles/GameEngine.dir/src/Vertex.cpp.s
+
 CMakeFiles/GameEngine.dir/src/Window.cpp.o: CMakeFiles/GameEngine.dir/flags.make
 CMakeFiles/GameEngine.dir/src/Window.cpp.o: /Users/hemang/VSCodeStuff/GameEngineProject/src/Window.cpp
 CMakeFiles/GameEngine.dir/src/Window.cpp.o: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GameEngine.dir/src/Window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/GameEngine.dir/src/Window.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/Window.cpp.o -MF CMakeFiles/GameEngine.dir/src/Window.cpp.o.d -o CMakeFiles/GameEngine.dir/src/Window.cpp.o -c /Users/hemang/VSCodeStuff/GameEngineProject/src/Window.cpp
 
 CMakeFiles/GameEngine.dir/src/Window.cpp.i: cmake_force
@@ -161,8 +259,15 @@ GameEngine_OBJECTS = \
 "CMakeFiles/GameEngine.dir/src/Game.cpp.o" \
 "CMakeFiles/GameEngine.dir/src/Input.cpp.o" \
 "CMakeFiles/GameEngine.dir/src/MainComponent.cpp.o" \
+"CMakeFiles/GameEngine.dir/src/Matrix4f.cpp.o" \
+"CMakeFiles/GameEngine.dir/src/Mesh.cpp.o" \
+"CMakeFiles/GameEngine.dir/src/Quaternion.cpp.o" \
+"CMakeFiles/GameEngine.dir/src/RenderUtil.cpp.o" \
 "CMakeFiles/GameEngine.dir/src/Time.cpp.o" \
+"CMakeFiles/GameEngine.dir/src/Util.cpp.o" \
 "CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o" \
+"CMakeFiles/GameEngine.dir/src/Vector3f.cpp.o" \
+"CMakeFiles/GameEngine.dir/src/Vertex.cpp.o" \
 "CMakeFiles/GameEngine.dir/src/Window.cpp.o"
 
 # External object files for target GameEngine
@@ -171,14 +276,22 @@ GameEngine_EXTERNAL_OBJECTS =
 GameEngine: CMakeFiles/GameEngine.dir/src/Game.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/src/Input.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/src/MainComponent.cpp.o
+GameEngine: CMakeFiles/GameEngine.dir/src/Matrix4f.cpp.o
+GameEngine: CMakeFiles/GameEngine.dir/src/Mesh.cpp.o
+GameEngine: CMakeFiles/GameEngine.dir/src/Quaternion.cpp.o
+GameEngine: CMakeFiles/GameEngine.dir/src/RenderUtil.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/src/Time.cpp.o
+GameEngine: CMakeFiles/GameEngine.dir/src/Util.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/src/Vector2f.cpp.o
+GameEngine: CMakeFiles/GameEngine.dir/src/Vector3f.cpp.o
+GameEngine: CMakeFiles/GameEngine.dir/src/Vertex.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/src/Window.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/build.make
 GameEngine: /Users/hemang/.conan2/p/b/glfw5de7061ef963d/p/lib/libglfw3.a
 GameEngine: /Users/hemang/.conan2/p/b/glewd73c4073010bb/p/lib/libGLEWd.a
+GameEngine: /Users/hemang/.conan2/p/b/gladea9d9f520b119/p/lib/libglad.a
 GameEngine: CMakeFiles/GameEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable GameEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/hemang/VSCodeStuff/GameEngineProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable GameEngine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GameEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

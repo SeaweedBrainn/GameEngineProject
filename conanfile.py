@@ -8,6 +8,7 @@ class GameEngineProject(ConanFile):
         self.requires("glfw/3.4")
         self.requires("glew/2.2.0")
         self.requires("glm/1.0.1")
+        self.requires("glad/0.1.36")
     
     def build_requirements(self):
         self.tool_requires("cmake/[>=3.25]")

@@ -12,6 +12,12 @@ void Window::CreateWindow(int width, int height, string title){
 
     window = glfwCreateWindow(width, height, title.c_str(), nullptr, nullptr);
     glfwMakeContextCurrent(window);
+
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
+        std::cerr << "Failed to initialize GLAD" << std::endl;
+        std::exit(-1);
+    }
+    
     glfwSwapInterval(0);  // 0 = disable V-Sync
 
 }
