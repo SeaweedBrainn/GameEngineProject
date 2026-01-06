@@ -6,7 +6,7 @@
 
 class Mesh {
 private:
-    GLuint vbo;
+    GLuint vbo, vao, ebo, shaderProgram;
     GLsizei size;
 public:
     Mesh();

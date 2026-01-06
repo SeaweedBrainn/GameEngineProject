@@ -18,5 +18,6 @@ class Window{
         static int GetHeight();
         static string GetTitle();
         static GLFWwindow* getWindow();
+        static void framebuffer_size_callback(GLFWwindow* window, int width, int height);
         
 };

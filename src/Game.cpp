@@ -1,9 +1,12 @@
 #include "Game.h"
 
 Game::Game(): mesh(Mesh()){
-    vertexList data {Vertex(Vector3f(-1,-1,0)),
-                    Vertex(Vector3f(-1,1,0)),
-                    Vertex(Vector3f(0,1,0))};
+    vertexList data {
+                     Vertex(Vector3f(0,0.5,0)),
+                     Vertex(Vector3f(0.5,-0.5,0)),
+                     Vertex(Vector3f(-0.5,-0.5,0))
+                    };
+
     mesh.addVertices(data);
 }
 
