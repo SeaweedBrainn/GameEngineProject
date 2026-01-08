@@ -3,11 +3,11 @@ I have decided to create my own game engine. I have almost no experience in anyt
 
 #### Initial Commit: August 23, 2025
 
-#Requirements
+# Requirements
 - Cmake version > 3.25
 - Conan Package Manager
 
-#Setup Instructions
+# Setup Instructions
 1. Clone the repository
 2. Open the project folder in VS Code
 3. In the terminal, change directory to the root directory of the project and run `conan install . -sbuild_type=Debug -of=conan/deb --build=missing'
