@@ -400,3 +400,8 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 .DS_Store
+
+/build/
+/conan/
+CMakeUserPresets.json
+

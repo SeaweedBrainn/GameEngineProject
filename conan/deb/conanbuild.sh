@@ -1,1 +1,0 @@
-. "/Users/hemang/VSCodeStuff/GameEngineProject/conan/deb/conanbuildenv-debug-armv8.sh"
