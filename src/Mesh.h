@@ -3,10 +3,11 @@
 #include <GLFW/glfw3.h>
 #include "Vertex.h"
 #include "Util.h"
+#include "Shader.h"
 
 class Mesh {
 private:
-    GLuint vbo, vao, ebo, shaderProgram;
+    GLuint vbo, vao, ebo;
     GLsizei size;
 public:
     Mesh();

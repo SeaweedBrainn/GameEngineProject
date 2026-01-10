@@ -10,7 +10,7 @@ I have decided to create my own game engine. I have almost no experience in anyt
 # Setup Instructions
 1. Clone the repository
 2. Open the project folder in VS Code
-3. In the terminal, change directory to the root directory of the project and run `conan install . -sbuild_type=Debug -of=conan/deb --build=missing'
+3. In the terminal, change directory to the root directory of the project and run `conan install . -sbuild_type=Debug -of=conan/deb --build=missing`
 4. Press the top search bar in VS Code and enter `> reload` -> `Reload Windows`.
 5. Select conan-debug from the availaible configurations
 6. Build and run
