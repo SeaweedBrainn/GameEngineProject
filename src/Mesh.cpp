@@ -3,12 +3,13 @@
 Mesh::Mesh() {
     glGenBuffers(1, &vbo);
     glGenVertexArrays(1, &vao);
+    glGenBuffers(1, &ebo);
     size = 0;
 }
 
-void Mesh::addVertices(vertexList vertices)
+void Mesh::addVertices(vertexList vertices, indexList indices)
 {
-    size = vertices.size();
+    size = indices.size();
     floatBuffer buffer = Util::createBuffer(vertices);
 
     glBindVertexArray(vao);
@@ -18,11 +19,14 @@ void Mesh::addVertices(vertexList vertices)
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, Vertex::SIZE * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
 
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(int), indices.data(), GL_STATIC_DRAW);
+
     glBindVertexArray(0);
 }
 
 void Mesh::draw(){
     glBindVertexArray(vao);
-    glDrawArrays(GL_TRIANGLES, 0, size);
+    glDrawElements(GL_TRIANGLES, size, GL_UNSIGNED_INT, (void*)0);
     glBindVertexArray(vao);
 }

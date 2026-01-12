@@ -51,12 +51,32 @@ float Vector3f::dot(Vector3f v){
     return (x * v.getX() + y * v.getY() + z * v.getZ());
 }
 
+Vector3f Vector3f::rotate(float angle, Vector3f axis)
+{
+    float rad = angle * M_PI / 180;
+    float sinHalfAngle = sin(rad/2);
+    float cosHalfAngle = cos(rad/2);
+
+    float rx = axis.getX() * sinHalfAngle;
+    float ry = axis.getY() * sinHalfAngle;
+    float rz = axis.getZ() * sinHalfAngle;
+    float rw = cosHalfAngle;
+
+    Quaternion rotation(rx, ry, rz, rw);
+    Quaternion conjugate = rotation.conjugate();
+
+    Quaternion w = rotation * (*this) * conjugate;
+
+    x = w.getX();
+    y = w.getY();
+    z = w.getZ();
+
+    return *this;
+}
+
 Vector3f Vector3f::cross(Vector3f v)
 {
-    float x_ = y * v.getZ() - z * v.getY();
-    float y_ = z * v.getX() - x * v.getZ();
-    float z_ = x * v.getY() - y * v.getX();
-    return Vector3f(x_, y_, z_);
+    return (*this) * v;
 }
 
 Vector3f Vector3f::normalize()
@@ -94,9 +114,12 @@ Vector3f Vector3f::operator-(const float &other) const
     return Vector3f(x - other, y - other, z - other);
 }
 
-Vector3f Vector3f::operator*(const Vector3f &other) const
+Vector3f Vector3f::operator*(const Vector3f &v) const
 {
-    return Vector3f(x * other.getX(), y * other.getY(), z * other.getZ());
+    float x_ = y * v.getZ() - z * v.getY();
+    float y_ = z * v.getX() - x * v.getZ();
+    float z_ = x * v.getY() - y * v.getX();
+    return Vector3f(x_, y_, z_);
 }
 
 Vector3f Vector3f::operator*(const float &other) const

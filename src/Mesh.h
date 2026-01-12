@@ -3,7 +3,6 @@
 #include <GLFW/glfw3.h>
 #include "Vertex.h"
 #include "Util.h"
-#include "Shader.h"
 
 class Mesh {
 private:
@@ -11,6 +10,6 @@ private:
     GLsizei size;
 public:
     Mesh();
-    void addVertices(vertexList vertices);
+    void addVertices(vertexList vertices, indexList indices);
     void draw();
 };

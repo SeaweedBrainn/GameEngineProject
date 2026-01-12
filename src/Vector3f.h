@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <cmath>
+#include "Quaternion.h"
 
 class Vector3f {
 private:
@@ -20,6 +21,7 @@ public:
     void setZ(float value);
     float length();
     float dot(Vector3f v);
+    Vector3f rotate(float angle, Vector3f axis);
     Vector3f cross(Vector3f v);
     Vector3f normalize();
     Vector3f rotate(float angle);

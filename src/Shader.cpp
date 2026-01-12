@@ -10,32 +10,9 @@ Shader::Shader(const char *vertexPath, const char *fragmentPath)
 
     std::string vertexCode;
     std::string fragmentCode;
-    std::ifstream vShaderFile;
-    std::ifstream fShaderFile;
-
-    vShaderFile.exceptions (std::ifstream::failbit | std::ifstream::badbit);
-    fShaderFile.exceptions (std::ifstream::failbit | std::ifstream::badbit);
-
-    try{
-        vShaderFile.open(vertexPath);
-        fShaderFile.open(fragmentPath);
-        
-        std::stringstream vShaderStream, fShaderStream;
-
-        vShaderStream << vShaderFile.rdbuf();
-        fShaderStream << fShaderFile.rdbuf();
-
-        vShaderFile.close();
-        fShaderFile.close();
-
-        vertexCode = vShaderStream.str();
-        fragmentCode = fShaderStream.str();
-    }
-
-    catch(std::ifstream::failure e){
-        std::cerr << "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ" << std::endl;
-        exit(-1);
-    }
+    
+    ResourceLoader::loadShader(vertexPath, vertexCode);
+    ResourceLoader::loadShader(fragmentPath, fragmentCode);
 
     const char* vShaderCode = vertexCode.c_str();
     const char* fShaderCode = fragmentCode.c_str();
@@ -52,7 +29,7 @@ Shader::Shader(const char *vertexPath, const char *fragmentPath)
     if(!success){
         glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
         std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
-        exit(-1);
+        exit(1);
     }
 
     GLuint fragmentShader;
@@ -64,7 +41,7 @@ Shader::Shader(const char *vertexPath, const char *fragmentPath)
     if(!success){
         glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
         std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
-        exit(-1);
+        exit(1);
     }
 
     glAttachShader(ID, vertexShader);
@@ -75,7 +52,7 @@ Shader::Shader(const char *vertexPath, const char *fragmentPath)
     if(!success){
         glGetProgramInfoLog(ID, 512, NULL, infoLog);
         std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
-        exit(-1);
+        exit(1);
     }
 
     glDeleteShader(vertexShader);
@@ -89,38 +66,10 @@ Shader::Shader(const char *vertexPath, const char* geometryPath, const char *fra
     std::string vertexCode;
     std::string fragmentCode;
     std::string geometryCode;
-    std::ifstream vShaderFile;
-    std::ifstream fShaderFile;
-    std::ifstream gShaderFile;
-
-    vShaderFile.exceptions (std::ifstream::failbit | std::ifstream::badbit);
-    fShaderFile.exceptions (std::ifstream::failbit | std::ifstream::badbit);
-    gShaderFile.exceptions (std::ifstream::failbit | std::ifstream::badbit);
-
-    try{
-        vShaderFile.open(vertexPath);
-        fShaderFile.open(fragmentPath);
-        gShaderFile.open(geometryPath);
-        
-        std::stringstream vShaderStream, fShaderStream, gShaderStream;
-
-        vShaderStream << vShaderFile.rdbuf();
-        fShaderStream << fShaderFile.rdbuf();
-        gShaderStream << gShaderFile.rdbuf();
-
-        vShaderFile.close();
-        fShaderFile.close();
-        gShaderFile.close();
-
-        vertexCode = vShaderStream.str();
-        fragmentCode = fShaderStream.str();
-        geometryCode = gShaderStream.str();
-    }
-
-    catch(std::ifstream::failure e){
-        std::cerr << "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ" << std::endl;
-        exit(-1);
-    }
+    
+    ResourceLoader::loadShader(vertexPath, vertexCode);
+    ResourceLoader::loadShader(geometryPath, geometryCode);
+    ResourceLoader::loadShader(fragmentPath, fragmentCode);
 
     const char* vShaderCode = vertexCode.c_str();
     const char* fShaderCode = fragmentCode.c_str();
@@ -138,7 +87,7 @@ Shader::Shader(const char *vertexPath, const char* geometryPath, const char *fra
     if(!success){
         glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
         std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
-        exit(-1);
+        exit(1);
     }
 
     GLuint fragmentShader;
@@ -150,7 +99,7 @@ Shader::Shader(const char *vertexPath, const char* geometryPath, const char *fra
     if(!success){
         glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
         std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
-        exit(-1);
+        exit(1);
     }
 
     GLuint geometryShader;
@@ -162,7 +111,7 @@ Shader::Shader(const char *vertexPath, const char* geometryPath, const char *fra
     if(!success){
         glGetShaderInfoLog(geometryShader, 512, NULL, infoLog);
         std::cout << "ERROR::SHADER::GEOMETRY::COMPILATION_FAILED\n" << infoLog << std::endl;
-        exit(-1);
+        exit(1);
     }
 
     glAttachShader(ID, vertexShader);
@@ -174,7 +123,7 @@ Shader::Shader(const char *vertexPath, const char* geometryPath, const char *fra
     if(!success){
         glGetProgramInfoLog(ID, 512, NULL, infoLog);
         std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
-        exit(-1);
+        exit(1);
     }
 
     glDeleteShader(vertexShader);
@@ -204,26 +153,10 @@ void Shader::addFragmentShader(const char* filePath)
 
 void Shader::addShader(const char* filePath, GLenum shader_type)
 {
-    std::string code;
-    std::ifstream shaderFile;
+    std::string stringShaderCode;
+    ResourceLoader::loadShader(filePath, stringShaderCode);
 
-    shaderFile.exceptions (std::ifstream::failbit | std::ifstream::badbit);
-
-    try{
-        shaderFile.open(filePath);
-
-        std::stringstream shaderStream;
-        shaderStream << shaderFile.rdbuf();
-        shaderFile.close();
-
-        code = shaderStream.str();
-    }
-
-    catch(std::ifstream::failure e){
-        std::cerr << "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ" << std::endl;
-    }
-
-    const char*  shaderCode = code.c_str();
+    const char*  shaderCode = stringShaderCode.c_str();
     
     int success;
     char infoLog[512];
@@ -237,7 +170,7 @@ void Shader::addShader(const char* filePath, GLenum shader_type)
     if(!success){
         glGetShaderInfoLog(shader, 512, NULL, infoLog);
         std::cout << "ERROR::SHADER::" << shader_type << "::COMPILATION_FAILED\n" << infoLog << std::endl;
-        exit(-1);
+        exit(1);
     }
 
     glAttachShader(ID, shader);

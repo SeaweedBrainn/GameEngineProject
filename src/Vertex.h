@@ -14,3 +14,4 @@ public:
 };
 
 typedef std::vector<Vertex> vertexList;
+typedef std::vector<unsigned int> indexList;

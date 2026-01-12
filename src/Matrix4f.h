@@ -1,6 +1,7 @@
 #pragma once
 #include <cmath>
 #include <vector>
+#include "Vector3f.h"
 
 typedef std::vector<float> _1dFloatVector;
 typedef std::vector<_1dFloatVector> _2dFloatVector;
@@ -21,4 +22,8 @@ public:
     Matrix4f operator*(const Matrix4f& other) const;
 
     Matrix4f initTranslation(float x, float y, float z);
+    Matrix4f initRotation(float x, float y, float z);
+    Matrix4f initScale(float x, float y, float z);
+    Matrix4f initProjection(float fov, float width, float height, float zNear, float zFar);
+    Matrix4f initCamera(Vector3f forward, Vector3f up);
 };

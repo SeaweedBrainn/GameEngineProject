@@ -1,7 +1,8 @@
 #pragma once
 #include <cmath>
 #include <iostream>
-#include "Vector3f.h"
+
+class Vector3f;
 
 class Quaternion {
 private:

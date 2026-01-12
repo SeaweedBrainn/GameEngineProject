@@ -1,12 +1,10 @@
 #pragma once
 #include <string>
 #include <glad/glad.h>
-#include <fstream>
-#include <sstream>
-#include <iostream>
 #include <unordered_map>
 #include "Vector3f.h"
 #include "Matrix4f.h"
+#include "ResourceLoader.h"
 
 class Shader {
 public:

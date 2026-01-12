@@ -1,4 +1,5 @@
 #include "Quaternion.h"
+#include "Vector3f.h"
 
 Quaternion::Quaternion(): x(float()), y(float()), z(float()), w(float()) {
     
@@ -59,8 +60,8 @@ Quaternion Quaternion::operator*(const Quaternion &other) const
 {
     float w_ = w * other.getW() - x * other.getX() - y * other.getY() - z * other.getZ();
     float x_ = x * other.getW() + w * other.getX() + y * other.getZ() - z * other.getY();
-    float y_ = x * other.getW() + w * other.getY() + z * other.getX() - x * other.getZ();
-    float z_ = x * other.getW() + w * other.getZ() + x * other.getY() - y * other.getX();
+    float y_ = y * other.getW() + w * other.getY() + z * other.getX() - x * other.getZ();
+    float z_ = z * other.getW() + w * other.getZ() + x * other.getY() - y * other.getX();
 
     return Quaternion(x_, y_, z_, w_);
 }

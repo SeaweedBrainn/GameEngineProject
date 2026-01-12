@@ -13,15 +13,14 @@ void Window::CreateWindow(int width, int height, string title){
 
     window = glfwCreateWindow(width, height, title.c_str(), nullptr, nullptr);
     glfwMakeContextCurrent(window);
-    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
         std::cerr << "Failed to initialize GLAD" << std::endl;
         std::exit(-1);
     }
+    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
     
     glfwSwapInterval(0);  // 0 = disable V-Sync
-
 }
 
 void Window::Render(){
@@ -56,4 +55,5 @@ GLFWwindow* Window::getWindow(){
 void Window::framebuffer_size_callback(GLFWwindow *window, int width, int height)
 {
     glViewport(0, 0, width, height);
+    Transform::setProjection(70.0f, width, height, 0.1f, 1000.0f);
 }
