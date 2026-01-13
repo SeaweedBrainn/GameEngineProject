@@ -5,6 +5,7 @@
 #include "Vector3f.h"
 #include "Matrix4f.h"
 #include "ResourceLoader.h"
+#include "Material.h"
 
 class Shader {
 public:
@@ -18,6 +19,7 @@ public:
     void addShader(const char* filePath, GLenum shader_type);
     void linkShaders();
     void bind();
+    void updateUniforms(Matrix4f worldMatrix, Matrix4f projectedMatrix, Material material);
     void addUniform(const std::string &uniform);
     void setUniformb(const std::string &uniformName, bool value) const;
     void setUniformi(const std::string &uniformName, int value) const;

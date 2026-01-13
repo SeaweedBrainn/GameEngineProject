@@ -89,9 +89,9 @@ Vector3f Vector3f::normalize()
     return *this;
 }
 
-Vector3f Vector3f::rotate(float angle)
+Vector3f Vector3f::absl()
 {
-    return Vector3f();
+    return Vector3f(abs(x), abs(y), abs(z));
 }
 
 Vector3f Vector3f::operator+(const Vector3f &other) const

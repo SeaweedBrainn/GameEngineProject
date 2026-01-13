@@ -45,3 +45,16 @@ Vector2f Input::getMousePosition(){
     glfwGetCursorPos(Window::getWindow(), &mouseX, &mouseY);
     return Vector2f(mouseX, mouseY);
 }
+
+void Input::setMousePosition(Vector2f pos)
+{
+    glfwSetCursorPos(Window::getWindow(), pos.getX(), pos.getY());
+}
+
+void Input::setCursor(bool enabled)
+{
+    if(!enabled) glfwSetInputMode(Window::getWindow(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+    else glfwSetInputMode(Window::getWindow(), GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+
+
+}

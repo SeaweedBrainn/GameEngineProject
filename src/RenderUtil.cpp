@@ -10,9 +10,13 @@ void RenderUtil::clearScreen()
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
+void RenderUtil::setClearColor(Vector3f color){
+    glClearColor(color.getX(), color.getY(), color.getZ(), 1.0f);
+}
+
 void RenderUtil::initGraphics()
 {
-    glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+    RenderUtil::setClearColor(Vector3f(0.0, 0.0f, 0.0));
 
     glFrontFace(GL_CW);
     glCullFace(GL_BACK);
@@ -22,4 +26,9 @@ void RenderUtil::initGraphics()
     //TODO: Depth Clamp for later
 
     glEnable(GL_FRAMEBUFFER_SRGB);
+}
+
+void RenderUtil::unbindTextures()
+{
+    glBindTexture(GL_TEXTURE_2D, 0);
 }

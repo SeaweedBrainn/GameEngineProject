@@ -12,4 +12,5 @@ public:
     Mesh();
     void addVertices(vertexList vertices, indexList indices);
     void draw();
+    void loadMesh(const char* meshPath);
 };

@@ -63,6 +63,11 @@ Vector2f Vector2f::rotate(float angle)
     return Vector2f(xVal, yVal);
 }
 
+Vector2f Vector2f::absl()
+{
+    return Vector2f(abs(x), abs(y));
+}
+
 Vector2f Vector2f::operator+(const Vector2f &other) const
 {
     return Vector2f(x + other.getX(), y + other.getY());

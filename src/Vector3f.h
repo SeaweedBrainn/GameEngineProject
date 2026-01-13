@@ -24,7 +24,7 @@ public:
     Vector3f rotate(float angle, Vector3f axis);
     Vector3f cross(Vector3f v);
     Vector3f normalize();
-    Vector3f rotate(float angle);
+    Vector3f absl();
     Vector3f operator+(const Vector3f& other) const;
     Vector3f operator+(const float& other) const;
     Vector3f operator-(const Vector3f& other) const;

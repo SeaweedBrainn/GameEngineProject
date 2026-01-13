@@ -11,8 +11,8 @@ Shader::Shader(const char *vertexPath, const char *fragmentPath)
     std::string vertexCode;
     std::string fragmentCode;
     
-    ResourceLoader::loadShader(vertexPath, vertexCode);
-    ResourceLoader::loadShader(fragmentPath, fragmentCode);
+    ResourceLoader::loadShaderCode(vertexPath, vertexCode);
+    ResourceLoader::loadShaderCode(fragmentPath, fragmentCode);
 
     const char* vShaderCode = vertexCode.c_str();
     const char* fShaderCode = fragmentCode.c_str();
@@ -67,9 +67,9 @@ Shader::Shader(const char *vertexPath, const char* geometryPath, const char *fra
     std::string fragmentCode;
     std::string geometryCode;
     
-    ResourceLoader::loadShader(vertexPath, vertexCode);
-    ResourceLoader::loadShader(geometryPath, geometryCode);
-    ResourceLoader::loadShader(fragmentPath, fragmentCode);
+    ResourceLoader::loadShaderCode(vertexPath, vertexCode);
+    ResourceLoader::loadShaderCode(geometryPath, geometryCode);
+    ResourceLoader::loadShaderCode(fragmentPath, fragmentCode);
 
     const char* vShaderCode = vertexCode.c_str();
     const char* fShaderCode = fragmentCode.c_str();
@@ -154,7 +154,7 @@ void Shader::addFragmentShader(const char* filePath)
 void Shader::addShader(const char* filePath, GLenum shader_type)
 {
     std::string stringShaderCode;
-    ResourceLoader::loadShader(filePath, stringShaderCode);
+    ResourceLoader::loadShaderCode(filePath, stringShaderCode);
 
     const char*  shaderCode = stringShaderCode.c_str();
     

@@ -9,13 +9,18 @@
 #include "Shader.h"
 #include "ResourceLoader.h"
 #include "Camera.h"
+#include "Texture.h"
+#include "RenderUtil.h"
+#include "BasicShader.h"
 
 class Game{
 private:
     Mesh mesh;
-    Shader shader;
+    BasicShader shader;
     Transform transform;
     Camera camera;
+    Texture texture;
+    Material material;
 public:
     Game();
     void input();

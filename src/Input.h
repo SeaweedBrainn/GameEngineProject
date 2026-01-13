@@ -18,6 +18,8 @@ class Input{
         static bool getMouseUp(int mouseButton);
         static void update();
         static Vector2f getMousePosition();
+        static void setMousePosition(Vector2f pos);
+        static void setCursor(bool enabled);
     private:
         static bool lastKeys[];
         static bool lastMouse[];

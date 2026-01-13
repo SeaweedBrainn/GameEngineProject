@@ -77,9 +77,22 @@ Vector3f Camera::getRight()
 
 void Camera::input()
 {
+    float sensitivity = 0.5f;
     float movAmt = static_cast<float>(10 * Time::getDelta());
-    float rotAmt = static_cast<float>(100 * Time::getDelta());
+    //float rotAmt = static_cast<float>(100 * Time::getDelta());
 
+    if(Input::getMouseUp(GLFW_MOUSE_BUTTON_MIDDLE) || Input::getKeyDown(GLFW_KEY_ESCAPE))
+    {
+        Input::setCursor(true);
+        mouseLocked = false;
+    }
+    if(Input::getMouseDown(GLFW_MOUSE_BUTTON_MIDDLE) || Input::getKeyDown(GLFW_KEY_R))
+    {
+        Input::setMousePosition(centerPosition);
+        Input::setCursor(false);
+        mouseLocked = true;
+    }
+    
     if(Input::getKey(GLFW_KEY_W)){
         move(getForward(), movAmt);
     }
@@ -99,6 +112,32 @@ void Camera::input()
         move(getUp(), -movAmt);
     }
 
+    if(mouseLocked)
+    {
+        Vector2f deltaPos = Input::getMousePosition() - centerPosition;
+        
+        bool rotY = deltaPos.getX() != 0;
+        bool rotX = deltaPos.getY() != 0;
+        
+        if(rotY)
+            rotateY(deltaPos.getX() * sensitivity);
+        if(rotX)
+            rotateX(deltaPos.getY() * sensitivity);
+            
+        if(rotY || rotX)
+            Input::setMousePosition(Vector2f(Window::GetWidth()/2, Window::GetHeight()/2));
+    }
+
+    if(Input::getKey(GLFW_KEY_L)){
+        Vector3f posi(0,0,0);
+        Vector3f forw(0,0,1);
+        Vector3f upw(0,1,0);
+        setPos(posi);
+        setForward(forw);
+        setUp(upw);
+    }
+
+    /*
     if(Input::getKey(GLFW_KEY_UP)){
         rotateX(-rotAmt);
     }
@@ -110,13 +149,6 @@ void Camera::input()
     }
     if(Input::getKey(GLFW_KEY_RIGHT)){
         rotateY(rotAmt);
-    }
-    if(Input::getKey(GLFW_KEY_L)){
-        Vector3f posi(0,0,0);
-        Vector3f forw(0,0,1);
-        Vector3f upw(0,1,0);
-        setPos(posi);
-        setForward(forw);
-        setUp(upw);
-    }
+    }*/
+    
 }

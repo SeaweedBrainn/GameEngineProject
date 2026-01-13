@@ -5,6 +5,7 @@
   find_package(GLEW REQUIRED)
   find_package(GLM REQUIRED)
   find_package(GLAD REQUIRED)
+  find_package(STB REQUIRED)
 
   # Add all .cpp files in the src directory and its subdirectories
   file(GLOB_RECURSE CPP_SOURCES src/*.cpp)
@@ -14,6 +15,6 @@
 
   add_executable(${PROJECT_NAME} ${CPP_SOURCES} ${HEADER_FILES}) 
 
-  target_link_libraries(${PROJECT_NAME} glfw GLEW::GLEW glm::glm glu::glu glad::glad)
+  target_link_libraries(${PROJECT_NAME} glfw GLEW::GLEW glm::glm glu::glu glad::glad stb::stb)
 
   set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 17) 

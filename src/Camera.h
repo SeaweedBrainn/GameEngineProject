@@ -2,6 +2,7 @@
 #include "Vector3f.h"
 #include "Input.h"
 #include "Time.h"
+#include "Window.h"
 
 class Camera {
 public:
@@ -26,6 +27,8 @@ private:
     Vector3f pos;
     Vector3f forward;
     Vector3f up;
+    bool mouseLocked = false;
+	Vector2f centerPosition = Vector2f(Window::GetWidth()/2, Window::GetHeight()/2);
 
     static const Vector3f yAxis;
 };

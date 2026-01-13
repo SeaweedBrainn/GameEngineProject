@@ -1,6 +1,8 @@
 #include "ResourceLoader.h"
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb_image.h"
 
-void ResourceLoader::loadShader(const char *shaderFilePath, std::string &stringShaderCode)
+void ResourceLoader::loadShaderCode(const char *shaderFilePath, std::string &stringShaderCode)
 {
     ResourceLoader::loadTextFileContents(shaderFilePath, stringShaderCode);
 }
@@ -38,6 +40,8 @@ void ResourceLoader::loadMesh(const char *meshPath, Mesh& mesh)
 
     vertexList vertices;
     indexList indices;
+    std::vector<Vector3f> vertexCoords;
+    std::vector<Vector2f> texCoords;
     std::string meshData;
     loadTextFileContents(meshPath, meshData);
 
@@ -52,6 +56,7 @@ void ResourceLoader::loadMesh(const char *meshPath, Mesh& mesh)
         if(type == "v"){
             float x, y, z;
             ss >> x >> y >> z;
+            vertexCoords.emplace_back(x,y,z);
             vertices.emplace_back(Vector3f(x,y,z));
         }
 
@@ -62,8 +67,36 @@ void ResourceLoader::loadMesh(const char *meshPath, Mesh& mesh)
             indices.push_back(b-1);
             indices.push_back(c-1);
         }
+
+        else if(type == "vt"){
+            float x, y;
+            ss >> x >> y;
+            texCoords.emplace_back(x,y);
+        }
+    }
+
+    if(texCoords.size() == 0){
+        mesh.addVertices(vertices, indices);
+        return;
+    }
+
+    vertices.clear();
+    for(int i = 0; i < vertexCoords.size(); i++){
+        vertices.emplace_back(vertexCoords[i], texCoords[i]);
     }
     mesh.addVertices(vertices, indices);
+    return;
+}
+
+void ResourceLoader::loadTexture(const char *texturePath, unsigned char*& textureData, int& width, int& height, int& nrChannels)
+{
+    stbi_set_flip_vertically_on_load(true);
+    textureData = stbi_load(texturePath, &width, &height, &nrChannels, 0);
+
+    if(!textureData){
+        std::cerr << "ERROR::TEXTURE::FILE_NOT_SUCCESFULLY_READ " << texturePath << std::endl;
+        exit(1);
+    }
 }
 
 std::string ResourceLoader::getFileExtension(const char* filePath){

@@ -19,6 +19,7 @@ class Vector2f{
         float dot(Vector2f v);
         Vector2f normalize();
         Vector2f rotate(float angle);
+        Vector2f absl();
         Vector2f operator+(const Vector2f& other) const;
         Vector2f operator+(const float& other) const;
         Vector2f operator-(const Vector2f& other) const;
