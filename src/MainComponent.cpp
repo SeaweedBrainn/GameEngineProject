@@ -1,8 +1,16 @@
 #include "MainComponent.h"
 
+#include "Window.h"
+#include "Time.h"
+#include "Input.h"
+#include "RenderUtil.h"
+#include <thread>
+#include <iostream>
+#include <string>
+
 int MainComponent::WIDTH = 800;
 int MainComponent::HEIGHT = 600;
-string MainComponent::TITLE = "3D Game Engine";
+std::string MainComponent::TITLE = "3D Game Engine";
 const double MainComponent::FRAME_CAP = 5000.0;
 
 int main(){

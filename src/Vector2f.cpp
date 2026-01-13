@@ -1,4 +1,5 @@
 #include "Vector2f.h"
+#include <cmath>
 
 Vector2f::Vector2f(): x(float()), y(float()){
 

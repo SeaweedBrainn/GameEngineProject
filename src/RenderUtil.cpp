@@ -1,4 +1,6 @@
 #include "RenderUtil.h"
+#include "Window.h"
+#include <glad/glad.h>
 
 RenderUtil::RenderUtil() {
     

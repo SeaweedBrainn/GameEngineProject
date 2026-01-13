@@ -1,5 +1,8 @@
 #include "Matrix4f.h"
 
+#include <cmath>
+#include "Vector3f.h"
+
 void Matrix4f::flattenData()
 {
     for(int i = 0; i < 4; i++){

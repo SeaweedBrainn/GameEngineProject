@@ -1,8 +1,9 @@
 #include "Texture.h"
+#include <iostream>
 
 Texture::Texture()
 {
-    glGenTextures(1, &ID);
+    
 }
 
 Texture::Texture(const char *texturePath)
@@ -13,10 +14,14 @@ Texture::Texture(const char *texturePath)
 
 Texture::~Texture()
 {
-    glDeleteTextures(1, &ID);
+    if(ID != 0)
+    {
+        glDeleteTextures(1, &ID);
+        ID = 0;
+    }
 }
 
-GLuint Texture::getID() {
+const GLuint Texture::getID() const{
     return ID;
 }
 
@@ -24,7 +29,7 @@ void Texture::setID(GLuint& value) {
     ID = value;
 }
 
-void Texture::bind(GLenum textureNum)
+void Texture::bind(GLenum textureNum) const
 {
     glActiveTexture(textureNum);
     glBindTexture(GL_TEXTURE_2D, ID);
@@ -61,4 +66,22 @@ void Texture::setTexture(const char *texturePath)
     glBindTexture(GL_TEXTURE_2D, 0);
 
     stbi_image_free(data);
+}
+
+Texture::Texture(Texture &&other) noexcept
+{
+    ID = other.ID;
+    other.ID = 0;
+}
+
+Texture& Texture::operator=(Texture&& other) noexcept
+{
+    if (this != &other) {
+        if (ID != 0)
+            glDeleteTextures(1, &ID);
+
+        ID = other.ID;
+        other.ID = 0;
+    }
+    return *this;
 }

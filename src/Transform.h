@@ -1,7 +1,7 @@
 #pragma once
 #include "Vector3f.h"
-#include "Matrix4f.h"
 
+class Matrix4f;
 class Camera;
 
 class Transform {

@@ -4,15 +4,15 @@
 
 class Material {
 private:
-    Texture* texture;
+    Texture texture;
     Vector3f color;
 public:
     Material();
-    Material(Texture& texture, Vector3f color);
+    Material(Texture&& texture, Vector3f color);
     Material(Vector3f color);
-    Texture* getTexture();
-    void setTexture(Texture*& value);
-    Vector3f getColor();
-    void setColor(Vector3f& value);
+    const Texture& getTexture() const;
+    void setTexture(Texture&& value);
+    const Vector3f getColor() const;
+    void setColor(Vector3f value);
 };
 

@@ -1,5 +1,6 @@
 #include "Transform.h"
 #include "Camera.h"
+#include "Matrix4f.h"
 
 float Transform::fov;
 float Transform::width;

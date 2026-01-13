@@ -1,4 +1,8 @@
 #include "Input.h"
+#include "Window.h"
+#include "Vector2f.h"
+#include <algorithm>
+#include <list>
 
 bool Input::lastKeys[Input::NUM_KEYCODES] = {};
 bool Input::lastMouse[Input::NUM_MOUSEBUTTONS] = {};

@@ -1,7 +1,7 @@
 #pragma once
-#include <cmath>
 #include <vector>
-#include "Vector3f.h"
+
+class Vector3f;
 
 typedef std::vector<float> _1dFloatVector;
 typedef std::vector<_1dFloatVector> _2dFloatVector;

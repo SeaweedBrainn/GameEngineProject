@@ -1,22 +1,17 @@
 #pragma once
 
-#include "Input.h"
 #include "Mesh.h"
-#include "Vertex.h"
-#include <iostream>
-#include <cmath>
 #include "Transform.h"
 #include "Shader.h"
-#include "ResourceLoader.h"
 #include "Camera.h"
 #include "Texture.h"
-#include "RenderUtil.h"
 #include "BasicShader.h"
 
 class Game{
 private:
     Mesh mesh;
-    BasicShader shader;
+    //Shader shader;
+    BasicShader basicShader;
     Transform transform;
     Camera camera;
     Texture texture;

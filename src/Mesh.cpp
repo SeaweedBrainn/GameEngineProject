@@ -1,5 +1,7 @@
 #include "Mesh.h"
+
 #include "ResourceLoader.h"
+#include "Util.h"
 
 Mesh::Mesh() {
     glGenBuffers(1, &vbo);

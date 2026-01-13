@@ -1,9 +1,6 @@
 #pragma once
-#define GLEW_STATIC
-#include "Window.h"
-#include "Vector2f.h"
-#include <algorithm>
-#include <list>
+
+class Vector2f;
 
 class Input{
     public:

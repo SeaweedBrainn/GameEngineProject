@@ -1,8 +1,10 @@
 #pragma once
 #include "Vector3f.h"
-#include "Input.h"
-#include "Time.h"
+#include "Vector2f.h"
 #include "Window.h"
+
+class Input;
+class Window;
 
 class Camera {
 public:

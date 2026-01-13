@@ -2,10 +2,10 @@
 #include <string>
 #include <glad/glad.h>
 #include <unordered_map>
-#include "Vector3f.h"
-#include "Matrix4f.h"
-#include "ResourceLoader.h"
 #include "Material.h"
+
+class Vector3f;
+class Matrix4f;
 
 class Shader {
 public:
@@ -19,7 +19,7 @@ public:
     void addShader(const char* filePath, GLenum shader_type);
     void linkShaders();
     void bind();
-    void updateUniforms(Matrix4f worldMatrix, Matrix4f projectedMatrix, Material material);
+    void updateUniforms(const Matrix4f worldMatrix, const Matrix4f projectedMatrix, const Material& material = Material());
     void addUniform(const std::string &uniform);
     void setUniformb(const std::string &uniformName, bool value) const;
     void setUniformi(const std::string &uniformName, int value) const;
@@ -29,6 +29,9 @@ public:
 
     Shader(const Shader&) = delete;
     Shader& operator=(const Shader&) = delete;
+
+    Shader(Shader&& other) noexcept;
+    Shader& operator=(Shader&& other) noexcept;
 private:
     GLuint ID = 0;
     std::unordered_map<std::string, GLint> uniforms;

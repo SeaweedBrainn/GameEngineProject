@@ -1,8 +1,10 @@
 #include "Window.h"
+#include "Transform.h"
+#include <iostream>
 
 GLFWwindow* Window::window = nullptr;
 
-void Window::CreateWindow(int width, int height, string title){
+void Window::CreateWindow(int width, int height, std::string title){
     glfwInit();
 
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);

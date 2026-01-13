@@ -1,4 +1,11 @@
 #include "Game.h"
+#include "Input.h"
+#include "Vertex.h"
+#include <iostream>
+#include <cmath>
+#include "ResourceLoader.h"
+#include "RenderUtil.h"
+#include "Matrix4f.h"
 
 Game::Game(): mesh(Mesh()){
     vertexList vertices {
@@ -16,8 +23,7 @@ Game::Game(): mesh(Mesh()){
     };
 
     mesh.addVertices(vertices, indices);
-    texture.setTexture("../../res/textures/monkeyTexture.png");
-    material = Material(texture, Vector3f(1,1,1));
+    material = Material(Texture("../../res/textures/monkeyTexture.png"), Vector3f(1,1,1));
 
     //mesh.loadMesh("../../res/models/texturedMonkey.obj");
 
@@ -28,6 +34,8 @@ Game::Game(): mesh(Mesh()){
     //shader.addVertexShader("../../res/shaders/vShader.vert");
     //shader.addFragmentShader("../../res/shaders/fShader.frag");
     //shader.linkShaders();
+
+    //shader = Shader("../../res/shaders/vShader.vert", "../../res/shaders/fShader.frag");
 
     //shader.addUniform("transform");
 }
@@ -47,8 +55,8 @@ void Game::update() {
 
 void Game::render() {
     RenderUtil::setClearColor(Vector3f(0.2f, 0.3f, 0.3f));
-    shader.bind();
-    shader.updateUniforms(transform.getTransformation(), transform.getProjectedTransformation(), material);
+    basicShader.bind();
+    basicShader.updateUniforms(transform.getTransformation(), transform.getProjectedTransformation(), material);
     //shader.setUniform("transform", transform.getProjectedTransformation());
     //texture.bind();
     mesh.draw();

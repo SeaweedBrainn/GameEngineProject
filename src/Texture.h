@@ -10,10 +10,13 @@ public:
     Texture();
     Texture(const char* texturePath);
     ~Texture();
-    GLuint getID();
+    const GLuint getID() const;
     void setID(GLuint& value);
-    void bind(GLenum textureNum = GL_TEXTURE0);
+    void bind(GLenum textureNum = GL_TEXTURE0) const;
     void setTexture(const char* texturePath);
+
+    Texture(Texture &&other) noexcept;
+    Texture &operator=(Texture &&other) noexcept;
 
     Texture(const Texture&) = delete;
     Texture& operator=(const Texture&) = delete;

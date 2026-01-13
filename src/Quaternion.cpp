@@ -1,5 +1,7 @@
 #include "Quaternion.h"
+
 #include "Vector3f.h"
+#include <cmath>
 
 Quaternion::Quaternion(): x(float()), y(float()), z(float()), w(float()) {
     

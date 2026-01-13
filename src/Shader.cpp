@@ -1,4 +1,8 @@
 #include "Shader.h"
+#include "Vector3f.h"
+#include "Matrix4f.h"
+#include "ResourceLoader.h"
+#include "Material.h"
 
 Shader::Shader() {
     ID = glCreateProgram();
@@ -132,8 +136,11 @@ Shader::Shader(const char *vertexPath, const char* geometryPath, const char *fra
 }
 
 Shader::~Shader()
-{
-    //glDeleteProgram(ID);
+{   
+    if(ID != 0){
+        glDeleteProgram(ID);
+        ID = 0;
+    }
 }
 
 void Shader::addVertexShader(const char* filePath)
@@ -229,4 +236,22 @@ void Shader::setUniform(const std::string &uniformName, Vector3f value) const
 void Shader::setUniform(const std::string &uniformName, Matrix4f value) const
 {
     glUniformMatrix4fv(uniforms.at(uniformName), 1, GL_TRUE, value.getData());
+}
+
+Shader::Shader(Shader &&other) noexcept
+{
+    ID = other.ID;
+    other.ID = 0;
+}
+
+Shader& Shader::operator=(Shader&& other) noexcept
+{
+    if (this != &other) {
+        if (ID != 0)
+            glDeleteProgram(ID);
+
+        ID = other.ID;
+        other.ID = 0;
+    }
+    return *this;
 }

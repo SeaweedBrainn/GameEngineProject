@@ -1,10 +1,7 @@
 #pragma once
 #include <string>
-#include <fstream>
-#include <sstream>
-#include <iostream>
-#include "Vertex.h"
-#include "Mesh.h"
+
+class Mesh;
 
 class ResourceLoader {
 public:

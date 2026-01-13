@@ -1,4 +1,6 @@
 #include "Camera.h"
+#include "Input.h"
+#include "Time.h"
 
 const Vector3f Camera::yAxis(0,1,0);
 

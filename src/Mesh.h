@@ -1,8 +1,7 @@
 #pragma once
+#include "Vertex.h"
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include "Vertex.h"
-#include "Util.h"
 
 class Mesh {
 private:

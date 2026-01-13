@@ -1,6 +1,12 @@
 #include "ResourceLoader.h"
+
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
+#include <fstream>
+#include <sstream>
+#include <iostream>
+#include "Vertex.h"
+#include "Mesh.h"
 
 void ResourceLoader::loadShaderCode(const char *shaderFilePath, std::string &stringShaderCode)
 {
